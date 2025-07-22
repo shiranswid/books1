@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>הוויזואליזציה שלי</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #eef3f7;
+      color: #2c3e50;
+    }
+
+    header {
+      background-color: #0d47a1;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 30px;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #0d47a1;
+      margin-top: 0;
+    }
+
+    p {
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
+      border-radius: 10px;
+      margin-top: 30px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 25px;
+    }
+
+    .buttons button {
+      background-color: #1976d2;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .buttons button:hover {
+      background-color: #42a5f5;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>הוויזואליזציה שלי</h1>
+  </header>
+
+  <main>
+    <h2>אודות הדשבורד</h2>
+    <p>
+      פרויקט זה מציג לוח מחוונים אינטראקטיבי שנבנה ב־Tableau, במטרה לנתח נתוני מכירות ספרים.
+      הדשבורד מאפשר לצפות במגמות לפי קטגוריות ספרים, אזורים גאוגרפיים, אמצעי תשלום, ערוצי הפצה ועוד.
+    </p>
+
+    <h2>מטרות הפרויקט</h2>
+    <ul>
+      <li>הבנת התנהגות לקוחות לפי חתכים שונים</li>
+      <li>זיהוי מגמות מכירה לאורך זמן</li>
+      <li>שיפור קבלת החלטות מבוססות נתונים</li>
+    </ul>
+
+    <div class="buttons">
+      <button onclick="window.open('download-report.xlsx', '_blank')">הורדת הדוח</button>
+      <button onclick="window.open('projects.html', '_blank')">עוד פרויקטים</button>
+      <button onclick="alert('תודה על המשוב שלך!')">תן משוב</button>
+    </div>
+
+    <h2 style="margin-top: 50px;">לוח בקרה אינטראקטיבי</h2>
+    <iframe src="https://public.tableau.com/views/Book3_17531753305480/Dashboard1?:language=en-GB&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" allowfullscreen></iframe>
+  </main>
+
+</body>
+</html>
